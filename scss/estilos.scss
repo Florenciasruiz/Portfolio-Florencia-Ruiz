@@ -1,0 +1,84 @@
+/* Variables */
+$font-stack: 'Arial', sans-serif;
+$primary-color: #007bff;
+$light-bg: #f8f9fa;
+
+/* Mixins */
+@mixin box-shadow($x, $y, $blur, $color) {
+  box-shadow: $x $y $blur $color;
+}
+
+/* General Styles */
+body {
+  font-family: $font-stack;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: $light-bg;
+  @include box-shadow(0, 2px, 4px, rgba(0, 0, 0, 0.1));
+}
+
+.navbar-brand img {
+  width: 100px;
+}
+
+.nav-link {
+  color: #000;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.portfolio {
+  padding: 50px 0;
+
+  h3 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  h6 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+}
+
+.forma-decoracion img,
+.rectangulo-colores img {
+  max-width: 100%;
+  height: auto;
+}
+
+.iframe {
+  margin: 30px 0;
+}
+
+footer {
+  background-color: $light-bg;
+  padding: 20px 0;
+  @include box-shadow(0, -2px, 4px, rgba(0, 0, 0, 0.1));
+
+  .logo-container img {
+    width: 40px;
+    margin: 0 10px;
+  }
+
+  p {
+    margin: 10px 0 0;
+  }
+}
+
+/* Animations */
+.portfoliowebsite,
+.uxui {
+  opacity: 0;
+}
+
+.portfoliowebsite.animate__animated,
+.uxui.animate__animated {
+  opacity: 1;
+}

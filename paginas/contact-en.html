@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--SEO-->
+    <meta name="description" content="Formulario de contacto para contratar servicios de Florencia Ruiz">
+    <meta name="keywords" content="contact me, formulario, form, email address">
+    <link rel="shortcut icon" href="/assets/FAVICON_Mesa de trabajo 1.png" type="image/x-icon">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Portfolio - Florencia Ruiz</title>
+</head>
+
+<body class="cuerpo color-especifico-contact">
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="#"><img class="w-50 ms-5" src="/assets/Florencia Ruiz.png" alt="Imagen logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto text-left">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/index-en.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/paginas/about-en.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/paginas/projects-en.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/paginas/myapproach-en.html">Approach</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/paginas/contact-en.html">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown mt-n1">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Language
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="/paginas/contacto.html"><img class="w-25" src="/assets/ESP bandera.png" alt="Español"> Spanish</a></li>
+                                <li><a class="dropdown-item" href="/paginas/contact-en.html"><img class="w-25" src="/assets/EEUU bandera png.png" alt="Inglés"> English</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--CONTACT-->
+    <section class="container text-start contact mt-5">
+        <div class="">
+            <h1 class="animate__animated animate__fadeIn">CONTACT</h1>
+            <div class="row mt-4">
+                <h3 class="mt-5 interested-in">Interestig in working together?</h3>
+                <p class="mt-3">EMAIL: Florenciasruiz95@gmail.com</p> 
+                <p>PHONE: +5493571538679</p>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!--GRID IMÁGENES-->
+        <section class="container celulares mt-5">
+            <div class="container imagenes-phone animate__animated animate__fadeIn">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-md-4 text-center mb-4 mb-md-0">
+                        <img class="img-fluid" src="/assets/cel 1.png" alt="Cel1">
+                    </div>
+                    <div class="col-10 col-md-4 text-center">
+                        <img class="img-fluid" src="/assets/Group 22 (1).png" alt="Cel2">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--FORMULARIO-->
+        <section class="container contact-form">
+            <div class="justify-content-center">
+                <div>
+                    <h2 class="contact-title mb-4">¡Contct me!</h2>
+                    <div id="successMessage" class="alert alert-success" style="display: none;"></div>
+                    <div id="errorMessage" class="alert alert-danger" style="display: none;"></div>
+                    <form id="signup" action="https://formsubmit.co/sflorenciaruiz@gmail.com" method="POST">
+                        <input type="hidden" name="_csrf" value="{{ getCsrfToken() }}">
+                        <input type="hidden" name="_subject" value="Nuevo mensaje de contacto">
+                        <input type="hidden" name="_captcha" value="false">
+                        <div class="form-group mb-4">
+                            <input type="text" id="name" name="name" class="form-control form-control-lg" placeholder="Name" required>
+                            <small></small>
+                        </div>
+                        <div class="form-group mb-4">
+                            <input type="email" id="email" name="email" class="form-control form-control-lg" placeholder="Email" required>
+                            <small></small>
+                        </div>
+                        <div class="form-group mb-4">
+                            <textarea id="message" name="message" class="form-control form-control-lg" rows="4" placeholder="Message" required></textarea>
+                            <small></small>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    
+        
+        
+
+		<script src="js/app.js"></script>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="text-center py-4">
+        <div class="logo-container mb-3">
+            <a href="https://www.behance.net/" target="_blank"><img src="/assets/BEHANCE.png" class="footer-icon" alt="Behance"></a><a href="https://www.linkedin.com/" target="_blank"><img src="/assets/LINKEDIN.png" class="footer-icon" alt="LinkedIn"></a><a href="florenciasruiz@gmail.com"><img src="/assets/MAIL.png" class="footer-icon" alt="Correo"></a>
+        </div>
+        <p>Copyright 2023, Florencia Ruiz. All rights reserved.</p>
+    </footer>
+
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!--Animate CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</body>
+</html>
